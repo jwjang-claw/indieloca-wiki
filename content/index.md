@@ -1,0 +1,1 @@
+/home/jwjang/.openclaw/workspace/IndieLoca_Vault/00_Index.md
