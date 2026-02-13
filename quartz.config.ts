@@ -16,6 +16,7 @@ const config: QuartzConfig = {
       provider: "plausible",
     },
     locale: "en-US",
+    // Force Re-deploy (Cache Bust)
     baseUrl: "jwjang-claw.github.io/indieloca-wiki",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
