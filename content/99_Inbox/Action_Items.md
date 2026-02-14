@@ -1,39 +1,39 @@
-# ✅ IndieLoca Phase 1: Action Items
+# ✅ IndieLoca Phase 1: 액션 아이템
 
-**Goal:** Launch "Concierge Beta" and secure 3 pilot users.
-**Timeline:** D-7 (One Week Sprint)
+**목표:** "컨시어지 베타" 런칭 및 파이럿 유저 3명 확보.
+**타임라인:** D-7 (1주 스프린트)
 
-## 📢 1. Marketing (Recruit Pilots)
-- [ ] **Create Tally Form:**
-    - [ ] Question: "Role (Dev/Translator)?"
-    - [ ] Question: "Engine (Ren'Py/Unity)?"
-    - [ ] Question: "Pain Point (Tags/Overflow)?"
-    - [ ] Action: Upload sample script (Optional).
-- [ ] **Twitter/X Thread:**
-    - [ ] Write Hook: "Stop fixing broken tags."
-    - [ ] Add Visual: Screenshot of Overflow Checker.
-    - [ ] Post Link: Tally Form.
-- [ ] **Community Post:**
+## 📢 1. 마케팅 (파이럿 모집)
+- [ ] **Tally Form 생성:**
+    - [ ] 질문: "역할 (개발자/번역가)?"
+    - [ ] 질문: "엔진 (Ren'Py/Unity)?"
+    - [ ] 질문: "고통점 (태그/오버플로우)?"
+    - [ ] 액션: 샘플 스크립트 업로드 (선택).
+- [ ] **Twitter/X 스레드:**
+    - [ ] 훅 작성: "깨진 태그 수정은 이제 그만."
+    - [ ] 비주얼 추가: 오버플로우 체커 스크린샷.
+    - [ ] 링크 포스팅: Tally Form.
+- [ ] **커뮤니티 포스팅:**
     - [ ] Reddit (r/renpy, r/gamedev).
-    - [ ] Local Dev Communities (Indie Game Gallery).
+    - [ ] 로컬 개발자 커뮤니티 (인디게임 갤러리).
 
-## ⚙️ 2. GLM Pipeline (The Engine)
-- [ ] **Script: `translate_renpy.py`**
-    - [ ] Implement `extract_dialogue()` from .rpy.
-    - [ ] Implement `call_glm_api()` with System Prompt [[02_Tech_Analysis/GLM_Pipeline]].
-    - [ ] Implement `check_tags()` (Regex validation).
-    - [ ] Implement `export_to_web_json()`.
-- [ ] **Dry Run:**
-    - [ ] Test with "The Question" (Ren'Py SDK sample).
-    - [ ] Verify 0% Tag Loss.
+## ⚙️ 2. GLM 파이프라인 (엔진)
+- [ ] **스크립트: `translate_renpy.py`**
+    - [ ] `extract_dialogue()` from .rpy 구현.
+    - [ ] 시스템 프롬프트와 함께 `call_glm_api()` 구현 [[02_Tech_Analysis/GLM_Pipeline]].
+    - [ ] `check_tags()` 구현 (정규식 검증).
+    - [ ] `export_to_web_json()` 구현.
+- [ ] **드라이 런:**
+    - [ ] "The Question" (Ren'Py SDK 샘플)으로 테스트.
+    - [ ] 태그 손실 0% 확인.
 
-## 🌐 3. Product (Web)
-- [ ] **Update Landing Page:**
-    - [ ] Link "Apply for Beta" button to Tally Form.
-- [ ] **Onboarding:**
-    - [ ] Create a "Demo Project" visible to new users (showing off Overflow check).
+## 🌐 3. 제품 (웹)
+- [ ] **랜딩 페이지 업데이트:**
+    - [ ] "베타 신청" 버튼을 Tally Form으로 링크.
+- [ ] **온보딩:**
+    - [ ] 신규 유저에게 보여줄 "데모 프로젝트" 생성 (오버플로우 체크 시연).
 
-## 📝 4. Concierge Ops
-- [ ] **Workflow Setup:**
-    - [ ] Folder structure for incoming files (`/inbox`).
-    - [ ] Email template for delivering results ("Here is your localized build link").
+## 📝 4. 컨시어지 운영
+- [ ] **워크플로우 설정:**
+    - [ ] 수신 파일용 폴더 구조 (`/inbox`).
+    - [ ] 결과 전달용 이메일 템플릿 ("로컬라이제이션 빌드 링크입니다").

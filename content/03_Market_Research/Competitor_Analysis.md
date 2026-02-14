@@ -1,31 +1,31 @@
-# Market Research: AI Game Localization Tools
+# 시장 조사: AI 게임 로컬라이제이션 도구
 
-**Date:** 2026-02-13
-**Focus:** Benchmarking against "IndieLoca" (Late 2024 - Early 2026 Trends).
+**날짜:** 2026-02-13
+**포커스:** "IndieLoca" 대비 벤치마킹 (2024년 후반 - 2026년 초 트렌드).
 
-## 1. Market Overview
-The market is split:
-*   **Enterprise (Gridly, Crowdin):** Expensive, complex, data-heavy.
-*   **Indie Scripts (GitHub):** Free, unreliable, feature-poor.
-*   **IndieLoca's Spot:** The "Missing Middle" — Professional features (LQA) at an indie-friendly accessible level.
+## 1. 시장 개요
+시장은 분할되어 있습니다:
+*   **엔터프라이즈 (Gridly, Crowdin):** 비싸고, 복잡하고, 데이터 중심.
+*   **인디 스크립트 (GitHub):** 무료지만, 신뢰성 낮고, 기능 빈약.
+*   **IndieLoca의 자리:** "미드 갭" — 인디 친화적 접근성으로 전문 기능(LQA) 제공.
 
-## 2. Competitor Analysis
+## 2. 경쟁사 분석
 
-| Tool | Type | Key Threat / Feature | Notes |
+| 도구 | 유형 | 주요 위협 / 기능 | 비고 |
 | :--- | :--- | :--- | :--- |
-| **Gridly** | Enterprise CMS | **Contextual AI**. Uses grid data (lore) for LLM context. | High cost, high complexity. |
-| **Crowdin** | L10n Platform | Industry standard. AI is an add-on. | Good for apps, less "game feel". |
-| **LocalizeDirect** | Service | Mentions "pixel-based text limits". | Service-focused, not just a tool. |
-| **Ren'Py Translators** | Scripts | Free AI translation scripts. | No LQA, no context awareness. |
+| **Gridly** | 엔터프라이즈 CMS | **컨텍스트 AI**. 그리드 데이터(설정)를 LLM 컨텍스트로 활용. | 고비용, 고복잡도. |
+| **Crowdin** | L10n 플랫폼 | 업계 표준. AI는 애드온. | 앱에는 좋지만, "게임 느낌" 부족. |
+| **LocalizeDirect** | 서비스 | "픽셀 기반 텍스트 제한" 언급. | 서비스 중심, 단순 도구 아님. |
+| **Ren'Py Translators** | 스크립트 | 무료 AI 번역 스크립트. | LQA 없음, 컨텍스트 인식 없음. |
 
-## 3. IndieLoca's USP (Unique Selling Points)
-1.  **Technical LQA:**
-    *   **Pixel-Width Calculation:** Rare in small tools.
-    *   **Tag Safety:** Essential for game stability.
-2.  **Context AI:**
-    *   **Persona Keeper:** Translating *as* a character, not just *for* a game.
-3.  **Visualization:**
-    *   Seeing the translation in a "Game-like" view (Scene editor).
+## 3. IndieLoca의 USP (차별화 포인트)
+1.  **기술적 LQA:**
+    *   **픽셀 너비 계산:** 소규모 도구에서는 희귀.
+    *   **태그 안전:** 게임 안정성에 필수.
+2.  **컨텍스트 AI:**
+    *   **페르소나 키버:** 캐릭터 *로서* 번역, 게임 *을 위해* 번역이 아님.
+3.  **시각화:**
+    *   "게임 같은" 뷰에서 번역 확인 (장면 에디터).
 
-## 4. Recommendation
-Position IndieLoca not as a "Translator" but as a **"Localization Quality Assurance Platform"** that happens to translate. Sell the *safety* and *quality*, not just the speed.
+## 4. 권장사항
+IndieLoca를 "번역기"가 아닌 **"로컬라이제이션 품질 보증 플랫폼"**으로 포지셔닝하세요. 속도가 아니라 *안전성*과 *품질*을 판매하세요.

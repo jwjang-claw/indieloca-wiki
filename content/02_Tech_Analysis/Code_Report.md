@@ -1,32 +1,32 @@
-# Codebase Analysis Report
+# 코드베이스 분석 보고서
 
-**Date:** 2026-02-13
-**Scope:** `https://github.com/snailblu/project-translation`
+**날짜:** 2026-02-13
+**범위:** `https://github.com/snailblu/project-translation`
 
-## 1. Technology Stack
-*   **Backend:** Python (FastAPI), PostgreSQL, Celery/Redis, AI (OpenAI/Anthropic/Gemini).
-*   **Frontend:** React 19, TypeScript, Vite, Zustand, TanStack Query/Router.
+## 1. 기술 스택
+*   **백엔드:** Python (FastAPI), PostgreSQL, Celery/Redis, AI (OpenAI/Anthropic/Gemini).
+*   **프론트엔드:** React 19, TypeScript, Vite, Zustand, TanStack Query/Router.
 *   **UI:** Radix UI + Tailwind CSS.
-*   **Auth:** Clerk.
+*   **인증:** Clerk.
 
-## 2. Current Features (Status: MVP)
-| Feature Area | Status | Notes |
+## 2. 현재 기능 (상태: MVP)
+| 기능 영역 | 상태 | 비고 |
 | :--- | :--- | :--- |
-| **Project Mgmt** | ✅ | Source/Target lang, Project creation. |
-| **File Handling** | ✅ | **Ren'Py Script**, Steam Store CSV parsers implemented. |
-| **Translation Editor** | ✅ | Scene-based vertical layout. Speaker/Original/Translation view. |
-| **AI Features** | ✅ | Re-translate, Context injection. |
-| **Glossary/TM** | ✅ | Basic CRUD, Sidebar integration. |
-| **LQA** | ✅ | **Badge/Violation display** (The "Killer Feature"). |
+| **프로젝트 관리** | ✅ | 소스/타겟 언어, 프로젝트 생성. |
+| **파일 처리** | ✅ | **Ren'Py Script**, Steam Store CSV 파서 구현됨. |
+| **번역 에디터** | ✅ | 장면 기반 세로 레이아웃. 화자/원문/번역 보기. |
+| **AI 기능** | ✅ | 재번역, 컨텍스트 주입. |
+| **용어집/TM** | ✅ | 기본 CRUD, 사이드바 통합. |
+| **LQA** | ✅ | **배지/위반 표시** ("킬러 기능"). |
 
-## 3. Gap Analysis for "Workbench" Vision
-### Missing / To-Do
-*   **Generic Document Model:** Need to support generic formats (DOCX, JSON) beyond Ren'Py.
-*   **Advanced CAT Features:**
-    *   Concordance Search (Manual TM lookup).
-    *   **Tag Handling UI:** Visual protection for variables (e.g., `{name}`).
-    *   Fuzzy Match Scores.
-*   **Editor UX:** Grid View option, Keyboard shortcuts.
+## 3. "워크벤치" 비전을 위한 갭 분석
+### 미구현 / 해야 할 일
+*   **범용 문서 모델:** Ren'Py 외에 일반 포맷(DOCX, JSON) 지원 필요.
+*   **고급 CAT 기능:**
+    *   일치 검색 (수동 TM 조회).
+    *   **태그 처리 UI:** 변수(예: `{name}`) 시각적 보호.
+    *   퍼지 매치 점수.
+*   **에디터 UX:** 그리드 뷰 옵션, 키보드 단축키.
 
-## 4. Conclusion
-The codebase is **~60% ready** for a general workbench but **90% ready** for a specialized Ren'Py localization tool. The architecture is solid and scalable.
+## 4. 결론
+코드베이스는 범용 워크벤치에는 **약 60% 준비**되었지만, 전문 Ren'Py 로컬라이제이션 도구로는 **90% 준비**되었습니다. 아키텍처는 견고하고 확장 가능합니다.

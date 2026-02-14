@@ -1,26 +1,42 @@
-# IndieLoca Master Plan
+# IndieLoca 마스터 플랜
 
-## 🎯 Vision
-**"IndieLoca: A Workbench for Game Translators"**
-Translating games isn't just about text replacement. It's about context, constraints, and code safety. IndieLoca bridges the gap between raw machine translation and professional game localization.
+## 🎯 비전
+**"IndieLoca: 게임 번역가를 위한 워크벤치"**
 
-## 🚀 Core Value Propositions
-1.  **Context-Aware Translation (AI + LLM):** Not just translating words, but maintaining character personas and narrative flow.
-2.  **Technical LQA (The Shield):**
-    *   **Tag Protection:** Prevents broken game code.
-    *   **Overflow Check:** Pixel-perfect rendering previews to avoid UI breakage.
-3.  **Ren'Py Specialization:** Native support for the most popular indie visual novel engine.
+게임 번역은 단순한 텍스트 교체가 아닙니다. 캐릭터의 목소리, 태그의 정확성, UI의 레이아웃까지 모두 챙겨야 하죠. IndieLoca는 번역가가 번역에만 집중할 수 있도록, 나머지를 자동화합니다.
 
-## 👥 Target Audience
-1.  **Primary:** Professional Game Translators / Boutique Agencies (Ren'Py focus).
-2.  **Secondary:** Indie Game Developers (Solo/Small teams).
+## 🧩 핵심 문제
+1. **태그 오류:** Ren'Py 태그(`{w}`, `{player_name}` 등)가 번역 과정에서 손상되면 게임이 깨집니다.
+2. **맥락 부족:** 엑셀에서 줄 단위로 번역하면 누가 말하는지, 어떤 감정인지 알 수 없습니다.
+3. **오버플로우:** 텍스트가 UI 박스를 넘어가는데 번역 완료 후에야 발견됩니다.
 
-## 🗺️ Strategic Roadmap
-- [[02_Tech_Analysis/Code_Report|Current Status Analysis]]
-- [[03_Market_Research/Competitor_Analysis|Market Research & Benchmarking]]
-- [[04_Marketing/Beta_Testing_Plan|Beta Tester Recruitment Strategy]] (To-Do)
+## 💡 IndieLoca의 해결책
+### 1. Tag Safety (태그 안전)
+- 번역 전후 태그 개수/형식을 자동 검증
+- 깨진 태그는 즉시 경고
 
-## 📌 Immediate Action Items
-- [ ] Recruit 1-3 Beta Testers (Pro Translators).
-- [ ] Polish "Killer Features" (Overflow/Tag Check) for demo.
-- [ ] Draft Landing Page Copy.
+### 2. Persona-Aware Draft (페르소나 기반 초벌)
+- 캐릭터 시트를 읽어 말투/성격 반영
+- GLM-5로 고품질 초벌 번역 생성
+
+### 3. LQA Report (품질 보고서)
+- 오버플로우 자동 감지
+- 번역가가 수정할 부분만 정리해서 전달
+
+## 🚀 실행 전략
+**Phase 1: 컨시어지 베타** (현재)
+- 번역가가 파일만 보내면, 우리가 초벌 + LQA 리포트 제공
+- 무료로 "와우" 경험 선사 → 입소문 유도
+
+**Phase 2: 셀프 서비스**
+- 번역가가 직접 업로드/다운로드
+- 구독 또는 건당 과금
+
+**Phase 3: 생태계**
+- 개발자-번역가 매칭
+- "IndieLoca 인증" 마크로 신뢰 구축
+
+## 📈 성공 지표
+- **Phase 1:** LQA 리포트 3건 납품, NPS 9+
+- **Phase 2:** 유료 전환 10명
+- **Phase 3:** 개발사 5곡 도입

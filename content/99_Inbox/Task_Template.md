@@ -1,24 +1,24 @@
-# 📋 Agent Task Template
+# 📋 에이전트 태스크 템플릿
 
-## 🎯 Goal
-*(One sentence summary of what needs to be done.)*
+## 🎯 목표
+*(해야 할 일을 한 문장으로 요약)*
 
-## 📂 Context & Resources
-*   **Input Files:** *(List specific paths)*
-*   **Reference Docs:** *(e.g., [[02_Tech_Analysis/GLM_Pipeline]])*
-*   **Key Constraints:** *(e.g., Do not use external libraries, Keep existing file structure)*
+## 📂 컨텍스트 & 리소스
+*   **입력 파일:** *(구체적인 경로 나열)*
+*   **참고 문서:** *(예: [[02_Tech_Analysis/GLM_Pipeline]])*
+*   **주요 제약사항:** *(예: 외부 라이브러리 사용 금지, 기존 파일 구조 유지)*
 
-## 🛠️ Requirements (Step-by-Step)
-1.  **Step 1:** *(Specific action)*
-2.  **Step 2:** *(Specific action)*
-3.  **Step 3:** *(Specific action)*
+## 🛠️ 요구사항 (단계별)
+1.  **1단계:** *(구체적 액션)*
+2.  **2단계:** *(구체적 액션)*
+3.  **3단계:** *(구체적 액션)*
 
-## ✅ Success Criteria (Definition of Done)
-*   [ ] **Output File:** *(Exact filename)*
-*   [ ] **Functionality:** *(What should happen when I run it?)*
-*   [ ] **Quality Check:** *(Specific thing to verify, e.g., "Tags must be preserved")*
+## ✅ 성공 기준 (완료 정의)
+*   [ ] **출력 파일:** *(정확한 파일명)*
+*   [ ] **기능:** *(실행하면 무슨 일이 일어나야 하는가?)*
+*   [ ] **품질 체크:** *(검증할 구체적 항목, 예: "태그가 보존되어야 함")*
 
 ---
-**Agent Instruction:**
-Read this ticket carefully. If anything is unclear, ask before starting.
-When finished, report back with the **Output File Path** and a **Summary of Changes**.
+**에이전트 지침:**
+이 티켓을 주의 깊게 읽으세요. 불명확한 점이 있으면 시작 전에 질문하세요.
+완료 후 **출력 파일 경로**와 **변경 사항 요약**을 보고하세요.

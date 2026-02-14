@@ -1,30 +1,30 @@
-# Target Persona Profile: "The Game Localizer"
+# 타겟 페르소나: "게임 로컬라이저"
 
-## 👤 Persona A: "The Ren'Py Specialist" (Primary)
-*   **Name:** Min-ji Kim (32, Freelance Game Translator)
-*   **Background:** 5+ years translating Visual Novels (KR->EN/JP). Used to work at an agency, now solo.
-*   **Pain Points:**
-    *   **Tag Nightmares:** Hates when `{player_name}` breaks the game. Spends hours manually checking tags.
-    *   **Context Loss:** Translates line-by-line in Excel without knowing *who* is speaking or the *emotion*.
-    *   **Overflow Stress:** The client complains *after* the build that text is cut off.
-*   **Goals:**
-    *   **Deliver Bug-Free Files:** Want clients to say "Your file worked perfectly on the first try."
-    *   **Efficiency:** Wants to translate the *story*, not fight the *format*.
-*   **Objections to AI:** "AI ruins the nuance/voice."
-    *   **Our Counter:** "We don't replace you. We handle the *tags* and *layout*. You fix the *soul*."
+## 👤 페르소나 A: "Ren'Py 전문가" (주 타겟)
+*   **이름:** 김민지 (32세, 프리랜서 게임 번역가)
+*   **배경:** 5년 이상 비주얼 노벨 번역 (한→영/일). 예전에는 에이전시 소속, 지금은 프리랜서.
+*   **고통점:**
+    *   **태그 악몽:** `{player_name}` 때문에 게임이 깨지는 걸 싫어함. 태그 확인하느라 몇 시간씩 수동 체크.
+    *   **맥락 상실:** 엑셀에서 한 줄씩 번역하는데 *누가* 말하는지, *감정*이 뭔지 모름.
+    *   **오버플로우 스트레스:** 클라이언트가 빌드 후에 텍스트가 잘렸다고 불평.
+*   **목표:**
+    *   **버그 없는 파일 납품:** 클라이언트가 "처음부터 완벽하게 작동했어요"라고 말해주길.
+    *   **효율성:** *형식*과 싸우지 않고 *스토리*를 번역하고 싶음.
+*   **AI에 대한 반론:** "AI가 뉘앙스/보이스를 망쳐요."
+    *   **우리의 대응:** "당신을 대체하지 않아요. *태그*랑 *레이아웃*은 우리가 처리합니다. 당신은 *영혼*을 다듬으세요."
 
-## 👤 Persona B: "The Indie Developer" (Secondary)
-*   **Name:** Jun-ho Lee (28, Solo Dev)
-*   **Background:** Making a story-heavy RPG. Budget is tight. English is okay but not native.
-*   **Pain Points:**
-    *   **Management Chaos:** Excel files flying everywhere. Version control hell.
-    *   **Blind Trust:** Doesn't know if the translator broke the game code until he runs it.
-*   **Goals:**
-    *   **Safety:** Just wants the game to *run* without crashing.
-    *   **Speed:** Wants to launch on Steam *now*.
-*   **Objections to Tools:** "I can just use Google Sheet."
-    *   **Our Counter:** "Google Sheet won't tell you if your text is too wide for the textbox. We do."
+## 👤 페르소나 B: "인디 개발자" (부 타겟)
+*   **이름:** 이준호 (28세, 솔로 개발자)
+*   **배경:** 스토리 중심 RPG 제작 중. 예산 빠듯함. 영어는 되지만 원어민 수준은 아님.
+*   **고통점:**
+    *   **관리 혼란:** 엑셀 파일이 여기저기 날아다님. 버전 관리 지옥.
+    *   **맹목적 신뢰:** 번역가가 게임 코드를 망가뜨렸는지 실행해보기 전까지 모름.
+*   **목표:**
+    *   **안전:** 그냥 게임이 크래시 없이 *실행*되길 원함.
+    *   **속도:** Steam에 *지금* 출시하고 싶음.
+*   **도구에 대한 반론:** "그냥 구글 시트 쓰면 되잖아요."
+    *   **우리의 대응:** "구글 시트는 텍스트가 텍스트박스보다 긴지 안 알려줘요. 우리는 알려줘요."
 
-## 🎯 Key Messaging Strategy
-*   **For Persona A (Translator):** "Stop being a Code Checker. Be a Translator again."
-*   **For Persona B (Developer):** "Localization that compiles. Guaranteed."
+## 🎯 핵심 메시징 전략
+*   **페르소나 A (번역가)용:** "코드 체커에서 번역가로 돌아가세요."
+*   **페르소나 B (개발자)용:** "컴파일되는 로컬라이제이션. 보장합니다."

@@ -1,41 +1,41 @@
-# 📋 Agent Task Ticket [003]
+# 📋 에이전트 태스크 티켓 [003]
 
-## 🎯 Goal
-Audit the existing GLM translation logic in `project-translation` to confirm it supports **Tag Safety** and **Persona Injection** for the "Concierge Beta".
+## 🎯 목표
+`project-translation`의 기존 GLM 번역 로직을 감사하여 "컨시어지 베타"를 위한 **태그 안전**과 **페르소나 주입**을 지원하는지 확인.
 
-## 🚩 Related Milestone (Checkpoint)
-*   **Target:** [[01_Strategy/Milestones]]
-*   **Alignment:** MS-1 (Tech Readiness) - Verify "Wow Point" (Persona Draft).
+## 🚩 관련 마일스톤 (체크포인트)
+*   **대상:** [[01_Strategy/Milestones]]
+*   **정렬:** MS-1 (기술 준비) - "와우 포인트" (페르소나 초벌) 검증.
 
-## 📂 Context & Resources (MUST READ)
-*   **Repo:** `project-translation` (FastAPI backend).
-*   **Tech Spec:** [[02_Tech_Analysis/Code_Report]] (Overview of stack).
-*   **GLM Spec:** [[02_Tech_Analysis/GLM_Pipeline]] (Target Prompt Strategy).
+## 📂 컨텍스트 & 리소스 (필수 읽기)
+*   **저장소:** `project-translation` (FastAPI 백엔드).
+*   **기술 스펙:** [[02_Tech_Analysis/Code_Report]] (스택 개요).
+*   **GLM 스펙:** [[02_Tech_Analysis/GLM_Pipeline]] (타겟 프롬프트 전략).
 
-## 🛠️ Requirements (Step-by-Step)
-1.  **Locate AI Logic:**
-    *   Clone `https://github.com/snailblu/project-translation`.
-    *   Find the Python code responsible for constructing LLM prompts (likely in `backend/app/services/` or `backend/app/llm/`).
-2.  **Audit Tag Safety:**
-    *   Check if the system prompt explicitly forbids translating `{variables}` and HTML tags.
-    *   Check if there is any post-processing regex validation to catch broken tags.
-3.  **Audit Persona Capability:**
-    *   Check if the function accepts a `context` or `character_profile` argument.
-    *   Verify if this profile is actually injected into the prompt.
-4.  **Proof of Concept (POC):**
-    *   Create a standalone script `test_persona_injection.py` that imports the logic (or mocks the prompt structure).
-    *   Run it with a test input: `Speaker: Alice (Rude), Text: "Hello {player}, nice to meet you."`
-    *   Verify if output is: `"Heh, {player}? Took you long enough."` (Persona applied) AND tag preserved.
+## 🛠️ 요구사항 (단계별)
+1.  **AI 로직 찾기:**
+    *   `https://github.com/snailblu/project-translation` 클론.
+    *   LLM 프롬프트 구성을 담당하는 Python 코드 찾기 (아마 `backend/app/services/` 또는 `backend/app/llm/`).
+2.  **태그 안전 감사:**
+    *   시스템 프롬프트가 `{variables}`와 HTML 태그 번역을 명시적으로 금지하는지 확인.
+    *   깨진 태그를 캐치하는 후처리 정규식 검증이 있는지 확인.
+3.  **페르소나 기능 감사:**
+    *   함수가 `context` 또는 `character_profile` 인수를 받는지 확인.
+    *   이 프로필이 실제로 프롬프트에 주입되는지 검증.
+4.  **개념 증명 (POC):**
+    *   로직을 임포트(또는 프롬프트 구조를 목업)하는 독립형 스크립트 `test_persona_injection.py` 생성.
+    *   테스트 입력으로 실행: `Speaker: Alice (무례함), Text: "안녕 {player}, 만나서 반가워."`
+    *   출력이 다음인지 확인: `"쳇, {player}? 늦었잖아."` (페르소나 적용됨) 그리고 태그 보존됨.
 
-## ✅ Success Criteria (Definition of Done)
-*   [ ] **Audit Report:** A markdown file summarizing:
-    *   Status of Tag Safety (Good/Bad).
-    *   Status of Persona Injection (Implemented/Missing).
-*   [ ] **POC Script:** `test_persona_injection.py` that demonstrates the capability.
-*   [ ] **Sample Output:** Log file showing successful persona application.
+## ✅ 성공 기준 (완료 정의)
+*   [ ] **감사 보고서:** 다음을 요약하는 마크다운 파일:
+    *   태그 안전 상태 (양호/불량).
+    *   페르소나 주입 상태 (구현됨/누락됨).
+*   [ ] **POC 스크립트:** 기능을 시연하는 `test_persona_injection.py`.
+*   [ ] **샘플 출력:** 성공적인 페르소나 적용을 보여주는 로그 파일.
 
 ---
-**Agent Instruction:**
-1.  **Read Context:** Start by reading the linked Strategy/Tech docs to understand "IndieLoca".
-2.  **Execute:** Follow the Requirements step-by-step.
-3.  **Report:** Report back with the **Audit Report** and **Sample Output** when done.
+**에이전트 지침:**
+1.  **컨텍스트 읽기:** 연결된 전략/기술 문서를 읽고 "IndieLoca" 이해.
+2.  **실행:** 요구사항을 단계별로 따름.
+3.  **보고:** 완료 후 **감사 보고서**와 **샘플 출력** 보고.

@@ -1,45 +1,45 @@
-# GLM-5 Pipeline & Prompt Strategy
+# GLM-5 파이프라인 & 프롬프트 전략
 
-**Goal:** Utilize GLM-5 (Coding Plan) for *Character-Aware Translation* and *Tag-Safe Generation*.
+**목표:** GLM-5 (Coding Plan)를 활용한 *캐릭터 인식 번역*과 *태그 안전 생성*.
 
-## 🧠 System Prompt Strategy (The "Soul" Injection)
-We don't just ask for translation. We ask for *roleplay*.
+## 🧠 시스템 프롬프트 전략 ("영혼" 주입)
+단순히 번역을 요청하지 않습니다. *롤플레이*를 요청합니다.
 
-### **System Prompt Template:**
+### **시스템 프롬프트 템플릿:**
 ```markdown
-You are a professional game localization expert specializing in Visual Novels (Ren'Py).
-Your task is to translate the following text from {source_lang} to {target_lang}.
+당신은 비주얼 노벨(Ren'Py) 전문 게임 로컬라이제이션 전문가입니다.
+다음 텍스트를 {source_lang}에서 {target_lang}로 번역하는 작업입니다.
 
-**CRITICAL RULES:**
-1.  **Tag Safety:** NEVER modify, remove, or translate variables inside `{}` or tags like `<b>`.
-    *   Example: `Hello {player_name}!` -> `안녕 {player_name}!` (O), `안녕 {플레이어_이름}!` (X)
-2.  **Character Voice:** Maintain the speaker's personality based on the provided profile.
-    *   Speaker: {speaker_name} ({personality_traits})
-    *   Tone: {tone}
-3.  **Length Constraint:** Keep the translation concise to fit text boxes. Max length: {max_chars} chars.
+**필수 규칙:**
+1.  **태그 안전:** `{}` 안의 변수나 `<b>` 같은 태그를 절대 수정, 삭제, 번역하지 마세요.
+    *   예: `Hello {player_name}!` -> `안녕 {player_name}!` (O), `안녕 {플레이어_이름}!` (X)
+2.  **캐릭터 보이스:** 제공된 프로필에 따라 화자의 성격을 유지하세요.
+    *   화자: {speaker_name} ({personality_traits})
+    *   톤: {tone}
+3.  **길이 제약:** 텍스트 박스에 맞도록 번역을 간결하게 유지하세요. 최대 길이: {max_chars}자.
 
-**Input Format:**
+**입력 형식:**
 `[ID: {id}] {speaker}: {text}`
 
-**Output Format:**
+**출력 형식:**
 `[ID: {id}] {translation}`
 ```
 
-### **Few-Shot Examples (Context Injection):**
-To ensure quality, always provide 3-5 examples of *correct* translations for the specific game/character before the task.
+### **퓨샷 예제 (컨텍스트 주입):**
+품질 보장을 위해 항상 작업 전에 해당 게임/캐릭터의 *올바른* 번역 예시 3-5개를 제공하세요.
 
-## 🔄 The Pipeline (Local Script -> Web)
-1.  **Ingest:** Read Ren'Py script (`.rpy`) or Excel.
-    *   Extract: ID, Speaker, Text, Context (if available).
-2.  **Batch Process (GLM-5):**
-    *   Group into chunks of 10-20 lines (to maintain context window).
-    *   Send to GLM-5 with System Prompt + Character Profile.
-3.  **Validation (LQA):**
-    *   **Tag Check:** Regex match `{.*?}` in source vs target. If mismatch -> **REJECT & RETRY**.
-    *   **Length Check:** Calculate pixel width (using font metrics). If overflow -> **FLAG for Review**.
-4.  **Export:** Generate JSON/CSV for IndieLoca Web import.
+## 🔄 파이프라인 (로컬 스크립트 -> 웹)
+1.  **수집:** Ren'Py 스크립트(`.rpy`) 또는 엑셀 읽기.
+    *   추출: ID, 화자, 텍스트, 컨텍스트 (가능한 경우).
+2.  **배치 처리 (GLM-5):**
+    *   10-20줄 청크로 그룹화 (컨텍스트 윈도우 유지).
+    *   시스템 프롬프트 + 캐릭터 프로필과 함께 GLM-5로 전송.
+3.  **검증 (LQA):**
+    *   **태그 체크:** 소스와 타겟에서 `{.*?}` 정규식 매치. 불일치 시 -> **거부 & 재시도**.
+    *   **길이 체크:** 픽셀 너비 계산 (폰트 메트릭 사용). 오버플로우 시 -> **검토 플래그**.
+4.  **내보내기:** IndieLoca 웹 임포트용 JSON/CSV 생성.
 
-## 🛠️ Implementation Notes
-*   **Concurrency:** Single-threaded (1 worker). Use a queue.
-*   **Retry Logic:** If GLM fails tag check 3 times, output with `[NEEDS_MANUAL_FIX]` tag.
-*   **Cost Management:** Cache results by (Source Text + Speaker) hash to avoid re-translating identical lines.
+## 🛠️ 구현 참고사항
+*   **동시성:** 단일 스레드 (1 워커). 큐 사용.
+*   **재시도 로직:** GLM이 태그 체크에 3번 실패하면 `[NEEDS_MANUAL_FIX]` 태그와 함께 출력.
+*   **비용 관리:** (소스 텍스트 + 화자) 해시로 결과 캐싱하여 동일한 줄 재번역 방지.

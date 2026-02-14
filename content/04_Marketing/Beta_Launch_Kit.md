@@ -1,64 +1,64 @@
-# Beta Launch Kit: "The Concierge Service"
+# 베타 런칭 키트: "컨시어지 서비스"
 
-**D-Day Checklist** & **Copy Templates** for the IndieLoca Concierge Beta.
+IndieLoca 컨시어지 베타를 위한 **D-Day 체크리스트** & **카피 템플릿**.
 
-## 📅 D-Day (Launch)
-- [ ] Deploy Tally Form (Application).
-- [ ] Post on Twitter (X).
-- [ ] Post on Developer Communities (Reddit/Indie Game Gallery).
+## 📅 D-Day (런칭)
+- [ ] Tally Form 배포 (신청서).
+- [ ] Twitter (X)에 포스팅.
+- [ ] 개발자 커뮤니티에 포스팅 (Reddit/인디게임 갤러리).
 
-## 📣 Marketing Copy (Twitter/X)
-**Goal:** Hook frustrated game translators/devs.
+## 📣 마케팅 카피 (Twitter/X)
+**목표:** 좌절한 게임 번역가/개발자를 후킹.
 
-### **Thread Start (Tweet 1/4):**
-> 🚨 **Game Translators: Stop Fixing Broken Tags.**
+### **스레드 시작 (트윗 1/4):**
+> 🚨 **게임 번역가 여러분, 깨진 태그 수정하느라 지치셨나요?**
 >
-> Translating Ren'Py games shouldn't mean fighting code.
-> Introducing **IndieLoca Concierge (Beta)**:
+> Ren'Py 게임 번역이 코드와 싸우는 걸 의미하면 안 되죠.
+> **IndieLoca 컨시어지 (베타)**를 소개합니다:
 >
-> ✅ **Tag-Safe Translation:** No broken `{variables}`.
-> ✅ **Visual Overflow Check:** See if text fits the box *before* the build.
-> ✅ **Context-Aware:** AI that knows who is speaking.
+> ✅ **태그 안전 번역:** 깨진 `{변수}` 없음.
+> ✅ **시각적 오버플로우 체크:** 빌드 *전에* 텍스트가 박스에 맞는지 확인.
+> ✅ **컨텍스트 인식:** 누가 말하는지 아는 AI.
 >
-> 🧵 *How to get your FREE translation + LQA report 👇*
+> 🧵 *무료 번역 + LQA 리포트 받는 방법 👇*
 
-### **The Offer (Tweet 2/4):**
-> **We handle the tech.** You handle the story.
+### **제안 (트윗 2/4):**
+> **기술은 저희가.** 스토리는 여러분이.
 >
-> Send us your script (Ren'Py/Excel). We run it through our **LQA Engine + GLM-5 AI**.
-> You get:
-> 1. A translation draft that *compiles*.
-> 2. A visual report of overflow errors.
-> 3. Access to fix it in our specialized Web Workbench.
+> 스크립트(Ren'Py/Excel)를 보내주세요. **LQA 엔진 + GLM-5 AI**를 통해 실행합니다.
+> 받게 될 것:
+> 1. *컴파일되는* 번역 초벌.
+> 2. 오버플로우 에러 시각 리포트.
+> 3. 전문 웹 워크벤치에서 수정 가능.
 
-### **Call to Action (Tweet 3/4):**
-> **Limit: 3 Teams Only (Concierge Mode).**
-> *Cost: $0 (Beta)*
+### **행동 호출 (트윗 3/4):**
+> **한정: 3팀만 (컨시어지 모드).**
+> *비용: $0 (베타)*
 >
-> If you're tired of "Why did the game crash?", apply here:
-> 👉 [Link to Tally Form]
+> "왜 게임이 크래시했지?"에 지치셨다면, 여기서 신청:
+> 👉 [Tally Form 링크]
 >
-> #gamedev #indiedev #renpy #l10n #IndieLoca
+> #게임개발 #인디개발 #renpy #로컬라이제이션 #IndieLoca
 
-### **Final Push (Tweet 4/4):**
-> (Optional: Screenshot of the "Overflow Checker" UI with a red box showing text cut off vs green "Safe" text.)
+### **마지막 푸시 (트윗 4/4):**
+> (선택: "오버플로우 체커" UI 스크린샷 - 텍스트가 잘린 빨간 박스 vs 녹색 "안전" 텍스트)
 >
-> "See the problem *before* your players do."
+> "플레이어가 보기 *전에* 문제를 확인하세요."
 
-## 📝 Tally Form Questions (Application)
-**Goal:** Filter for *serious* users who have actual pain points.
+## 📝 Tally Form 질문 (신청서)
+**목표:** 실제 고통점이 있는 *진지한* 유저 필터링.
 
-1.  **Role:** [Translator / Developer / Studio]
-2.  **Current Workflow:** [Excel / Google Sheet / Notepad / Other Tool]
-3.  **Biggest Pain Point:**
-    *   [] Tags breaking game code.
-    *   [] Text overflowing UI boxes.
-    *   [] Managing context/glossaries manually.
-    *   [] Other: ________
-4.  **Project Type:** [Ren'Py / Unity / RPG Maker / Other]
-5.  **File Upload (Optional):** "Upload a sample script (100 lines) for a free demo."
+1.  **역할:** [번역가 / 개발자 / 스튜디오]
+2.  **현재 워크플로우:** [Excel / Google Sheet / 메모장 / 기타 도구]
+3.  **가장 큰 고통점:**
+    *   [] 태그가 게임 코드를 깨뜨림.
+    *   [] 텍스트가 UI 박스를 넘침.
+    *   [] 컨텍스트/용어집 수동 관리.
+    *   [] 기타: ________
+4.  **프로젝트 유형:** [Ren'Py / Unity / RPG Maker / 기타]
+5.  **파일 업로드 (선택):** "샘플 스크립트(100줄)를 업로드하면 무료 데모 제공."
 
-## 🛡️ Crisis Management (FAQ)
-*   **"Is my script safe?"** -> "Yes. We process locally and delete immediately after delivery. Sign NDA if needed."
-*   **"The AI translation is weird."** -> "It's a draft! That's why we give you the Web Workbench to *fix* it easily."
-*   **"Why only 3 teams?"** -> "We manually verify quality for every line. Quality > Quantity."
+## 🛡️ 위기 관리 (FAQ)
+*   **"제 스크립트가 안전한가요?"** -> "네. 로컬에서 처리하고 전달 후 즉시 삭제합니다. 필요시 NDA 서명 가능."
+*   **"AI 번역이 이상해요."** -> "초벌입니다! 그래서 쉽게 *수정*할 수 있는 웹 워크벤치를 제공합니다."
+*   **"왜 3팀만인가요?"** -> "모든 줄을 수동으로 품질 검증합니다. 품질 > 수량."
