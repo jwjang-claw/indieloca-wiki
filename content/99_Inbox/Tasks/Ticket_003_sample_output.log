@@ -1,0 +1,144 @@
+============================================================
+🎭 IndieLoca GLM Pipeline - Persona Injection POC
+============================================================
+
+This POC demonstrates:
+1. Tag Safety - Placeholders are preserved through pipeline
+2. Persona Injection - Character profiles injected into prompts
+
+============================================================
+🧪 TEST 1: Tag Safety (Placeholder Preservation)
+============================================================
+
+📝 Original: Hello {player}, nice to meet you.
+🔄 Substituted: Hello **TAG_1**, nice to meet you.
+📋 Registry: {'{player}': 1}
+
+🤖 Simulated LLM Output: Heh, **TAG_1**? Took you long enough.
+✅ Restored: Heh, {player}? Took you long enough.
+
+✅ PASS: Placeholder preserved through entire pipeline
+
+============================================================
+🧪 TEST 2: Persona Injection (Character Profile)
+============================================================
+
+📚 Loaded Style Guide for: Alice
+   Tone: Rude, impatient, and sarcastic. She speaks in short, blunt sentences and often u...
+
+🎯 Formatted for Prompt Injection:
+[
+  {
+    "name": "Alice",
+    "tone": "Rude, impatient, and sarcastic. She speaks in short, blunt sentences and often uses dismissive language. She's not interested in being polite and shows irritation easily.",
+    "gender": "female",
+    "role": "supporting"
+  }
+]
+
+📄 System Prompt (excerpt):
+<role>
+You are a specialized game localization AI for ko->en translation.
+</role>
+
+<resources>
+# 1. GLOBAL CONTEXT & RESOURCES
+**[Project Resources]**
+- Style Guides: [
+  {
+    "name": "Alice",
+    "tone": "Rude, impatient, and sarcastic. She speaks in short, blunt sentences and often uses dismissive language. She's not interested in being polite and shows irritation easily.",
+    "gender": "female",
+    "role": "supporting"
+  }
+]
+</resources>
+
+<rules>
+# 2. CORE RULES (Fixed)
+- Preserve all plac...
+
+✅ PASS: Persona successfully injected into system prompt
+
+============================================================
+🧪 TEST 3: Full Pipeline (Persona + Tags)
+============================================================
+
+📝 Input:
+   Speaker: Alice
+   Text: Hello {player}, nice to meet you.
+
+🎭 Persona Loaded:
+   Rude, impatient, sarcastic. Speaks in short, blunt sentences.
+
+🔄 Placeholder Substitution:
+   Hello {player}, nice to meet you. → Hello **TAG_1**, nice to meet you.
+
+📤 Prompts Built:
+   System Prompt: 662 chars
+   User Prompt: 256 chars
+
+🤖 Simulated LLM Response:
+   {"translation": "Heh, **TAG_1**? Took you long enough."}
+
+✅ Final Translation:
+   Original: Hello {player}, nice to meet you.
+   Translated: Heh, {player}? Took you long enough.
+
+🔍 Verification:
+   Persona Applied: ✅
+   Tag Preserved: ✅
+
+✅ PASS: Both persona and tags working correctly!
+
+============================================================
+📋 SAMPLE OUTPUT (For Ticket Verification)
+============================================================
+
+┌─────────────────────────────────────────────────────────────┐
+│ INPUT                                                       │
+├─────────────────────────────────────────────────────────────┤
+│ Speaker: Alice
+│ Text: "Hello {player}, nice to meet you."
+│                                                             │
+│ Persona: Rude, impatient, sarcastic. Speaks in short, blunt...
+└─────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────┐
+│ PROCESSING                                                  │
+├─────────────────────────────────────────────────────────────┤
+│ 1. Placeholder Substitution:                                │
+│    "Hello {player}, nice to meet you." → "Hello **TAG_1**, nice to meet you."
+│                                                             │
+│ 2. Persona Injection:                                       │
+│    Style Guide JSON:                                        │
+│ [
+      {
+        "name": "Alice",
+        "tone": "Rude, impatient, sarcastic. Speaks in short, blunt sentences.",
+        "gender": "female",
+        "role": "supporting"
+      }
+    ]
+└─────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────┐
+│ OUTPUT                                                      │
+├─────────────────────────────────────────────────────────────┤
+│ Translated: "Heh, {player}? Took you long enough."
+│                                                             │
+│ ✅ Persona Applied: Rude, sarcastic tone                    │
+│ ✅ Tag Preserved: {player} intact                         │
+└─────────────────────────────────────────────────────────────┘
+
+
+============================================================
+📊 TEST SUMMARY
+============================================================
+   Tag Safety: ✅ PASS
+   Persona Injection: ✅ PASS
+   Full Pipeline: ✅ PASS
+
+🎉 All tests passed! The GLM pipeline supports:
+   ✅ Tag Safety (placeholder preservation)
+   ✅ Persona Injection (character profile injection)
