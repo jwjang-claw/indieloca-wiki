@@ -10,7 +10,7 @@
 
 ## 📂 02. 기술 분석 (엔진)
 *   [[02_Tech_Analysis/Code_Report|코드베이스 상태]] - 현재 MVP 분석.
-*   [[02_Tech_Analysis/GLM_Pipeline|GLM 파이프라인 & 프롬프트]] - 컨텍스트 & 태그를 위해 GLM-5를 사용하는 방법.
+*   [[02_Tech_Analysis/LLM_Pipeline|LLM 파이프라인 & 프롬프트]] - 컨텍스트 & 태그를 위해 고성능 LLM을 사용하는 방법.
 
 ## 📂 03. 시장 조사 (맥락)
 *   [[03_Market_Research/Competitor_Analysis|경쟁사 분석]] - Gridly vs. IndieLoca.
