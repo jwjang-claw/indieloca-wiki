@@ -11,14 +11,15 @@
 
 ## 📂 컨텍스트 & 리소스
 *   **저장소:** `project-translation` (FastAPI 백엔드)
+*   **실제 샘플:** `resource/2. Freak Circus/script.rpy` ← 실제 Ren'Py 게임 스크립트
 *   **기존 테스트:** `test_persona_injection.py` (99_Inbox/Tasks에 있음)
 *   **감사 결과:** [[99_Done/Ticket_003_audit_glm|Ticket_003]]에서 구현 확인됨
 *   **샘플 출력:** `Ticket_003_sample_output.log`
 
 ## 🛠️ 요구사항 (단계별)
-1.  **샘플 Ren'Py 스크립트 준비:**
-    *   `{player_name}`, `{w}`, `<b>` 등 다양한 태그 포함
-    *   캐릭터 페르소나 정의 (예: 츤데레)
+1.  **실제 Ren'Py 샘플 활용:**
+    *   `resource/2. Freak Circus/script.rpy`에서 대화 일부 발췌
+    *   `{player_name}`, `{w}`, `<b>` 등 다양한 태그 포함된 구간 선택
 2.  **LLM 파이프라인 실행:**
     *   `project-translation` 로컬 실행
     *   샘플 스크립트 입력 → 번역 결과 확인
