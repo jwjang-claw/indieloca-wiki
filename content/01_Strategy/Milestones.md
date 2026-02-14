@@ -1,24 +1,24 @@
-# 🚩 IndieLoca Phase 1 Milestones
+# 🚩 IndieLoca Phase 1 마일스톤
 
-**Goal:** Launch "Concierge Beta" & Verify "Translator's Weapon" Strategy.
+**목표:** "컨시어지 베타" 런칭 & "번역가의 무기" 전략 검증.
 
-## 🚩 MS-1: The "Wow" Tech Stack (D-2)
-*   **Goal:** GLM Pipeline must produce "Impressive Drafts" & "Accurate LQA".
-*   **Success Criteria:**
-    - [ ] **Tag Safety:** 0% Tag Loss on sample Ren'Py script.
-    - [ ] **Persona Check:** GLM Output reflects specific character traits (e.g., Tsundere).
-    - [ ] **Visual Output:** Automated generation of "Overflow Screenshots" (Red Box).
+## 🚩 MS-1: "와우" 기술 스택 (D-2)
+*   **목표:** LLM 파이프라인이 "인상적인 초벌"과 "정확한 LQA"를 생성해야 함.
+*   **성공 기준:**
+    - [ ] **태그 안전:** 샘플 Ren'Py 스크립트에서 태그 손실 0%.
+    - [ ] **페르소나 체크:** LLM 출력이 특정 캐릭터 특성을 반영 (예: 츤데레).
+    - [ ] **시각적 출력:** "오버플로우 스크린샷" 자동 생성 (빨간 박스).
 
-## 🚩 MS-2: The "Hook" Assets (D-4)
-*   **Goal:** Create marketing assets that "Hook" translators immediately.
-*   **Success Criteria:**
-    - [ ] **Tally Form:** Live URL with targeted questions (Pain Points).
-    - [ ] **Sample LQA Report:** PDF/Image showing "Before vs After" (IndieLoca fixed this!).
-    - [ ] **Twitter Thread:** Drafted & Scheduled.
+## 🚩 MS-2: "낚시" 자산 (D-4)
+*   **목표:** 번역가를 즉시 "낚을 수 있는" 마케팅 자산 제작.
+*   **성공 기준:**
+    - [ ] **Tally 폼:** 타겟팅된 질문(고통점)이 포함된 라이브 URL.
+    - [ ] **샘플 LQA 리포트:** "전/후"를 보여주는 PDF/이미지 (IndieLoca가 수정했어요!).
+    - [ ] **트위터 스레드:** 초안 작성 & 예약.
 
-## 🚩 MS-3: First "Wow" User (D-7)
-*   **Goal:** Secure 1 Pilot User who says "This is amazing".
-*   **Success Criteria:**
-    - [ ] **Acquisition:** 1 Pilot User sends a file.
-    - [ ] **Delivery:** LQA Report + Draft delivered.
-    - [ ] **Satisfaction:** User gives NPS 9/10 or asks for more.
+## 🚩 MS-3: 첫 "와우" 유저 (D-7)
+*   **목표:** "이거 대박이다"라고 말하는 파일럿 유저 1명 확보.
+*   **성공 기준:**
+    - [ ] **획득:** 파일럿 유저 1명이 파일 전송.
+    - [ ] **전달:** LQA 리포트 + 초벌 전달 완료.
+    - [ ] **만족:** 유저가 NPS 9/10 제공 또는 재요청.
