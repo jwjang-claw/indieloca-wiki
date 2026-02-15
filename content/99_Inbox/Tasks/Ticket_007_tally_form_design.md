@@ -19,20 +19,41 @@
     3.  **Overflow Stress:** Client complains "text got cut off" after build delivery
 *   **도구:** Tally.so (무료 계정 활용)
 
+## 📅 업무 수행 계획
+
+### Step 1: 질문 초안 작성 (에이전트 수행)
+- [ ] 3개 고통점 질문 구체화 + 선택지 설계
+- [ ] 폼 헤더/제목/설명 초안 작성
+- [ ] CTA 문구 확정
+- [ ] 결과물: `Ticket_007_questions_draft.md` 파일 생성
+
+### Step 2: Tally.so 폼 생성 (사용자 수동)
+- [ ] Tally.so 무료 계정 생성 (없는 경우)
+- [ ] Step 1의 초안을 바탕으로 폼 생성
+- [ ] 헤더 이미지 업로드 (IndieLoca 로고/일러스트)
+- [ ] 테스트 제출 후 링크 공유
+
+### Step 3: 검증 & 완료 (에이전트 수행)
+- [ ] Tally 링크를 티켓에 업데이트
+- [ ] HEARTBEAT.md에 완료 체크
+- [ ] Ticket_008 (샘플 LQA 리포트) 진행 준비
+
+---
+
 ## 🛠️ 요구사항 (단계별)
 1.  **Hook Questions (3~4, English):**
     *   **Tag Pain:** "Has a Ren'Py tag like {player_name} or {color=#hex} ever broken your game build?"
     *   **Context Pain:** "Ever found yourself digging through scripts wondering 'Who's saying this line?' while translating in Excel?"
     *   **Overflow Pain:** "Has a client ever come back saying 'the text got cut off' after you delivered?"
     *   **Translator Language:** "LQA", "quality check", "tags", "delivery", "client", "revisions"
-2.  **Solution Implication:**
-    *   Questions should naturally lead to IndieLoca's features (tag safety, character tone, overflow detection).
-    *   Address "AI ruins nuance" objection: "We don't replace you. We handle the *tags* and *layout*. You polish the *soul*."
+2.  **솔루션 암시:**
+    *   질문이 IndieLoca의 기능(태그 안전, 캐릭터 톤, 오버플로우 감지)으로 자연스럽게 이어지도록 구성.
+    *   "AI ruins nuance" 반론 대응: "We don't replace you. We handle the *tags* and *layout*. You polish the *soul*."
 3.  **CTA (Call to Action):**
-    *   Instead of "Join Beta", use **"Stop being a code checker. Go back to being a translator."** (core messaging)
-    *   Or: "Cut your tag checking time to zero"
-4.  **Tally Form Structure:**
-    *   Header image / Title / Description / Questions / Email field / Thank you page message.
+    *   "Join Beta" 대신 **"Stop being a code checker. Go back to being a translator."** (핵심 메시징)
+    *   또는: "Cut your tag checking time to zero"
+4.  **Tally 폼 구조:**
+    *   헤더 이미지 / 제목 / 설명 / 질문 / 이메일 필드 / 감사 페이지 메시지.
 
 ## ✅ 성공 기준 (완료 정의)
 *   [ ] **Questions Finalized:** 3 pain-point questions (tags/context/overflow) + choices, in English.
