@@ -1,24 +1,56 @@
-# 🏠 IndieLoca 전략 볼트
+---
+title: "Junwoo's Projects"
+---
 
-**비전:** "IndieLoca: 게임 번역가를 위한 워크벤치"
-**현재 단계:** Phase 1 (컨시어지 베타)
+# 🗂️ Junwoo's Projects
 
-## 📂 01. 전략 (두뇌)
-*   [[01_Strategy/Master_Plan|마스터 플랜]] - 거대한 비전 & 로드맵.
-*   [[01_Strategy/Target_Persona|타겟 페르소나]] - "김 번역가" & "이 개발자"는 누구인가?
-*   [[01_Strategy/Roadmap|로드맵]] - Phase 1 (컨시어지) -> Phase 3 (플랫폼).
-
-## 📂 02. 기술 분석 (엔진)
-*   [[02_Tech_Analysis/Code_Report|코드베이스 상태]] - 현재 MVP 분석.
-*   [[02_Tech_Analysis/LLM_Pipeline|LLM 파이프라인 & 프롬프트]] - 컨텍스트 & 태그를 위해 고성능 LLM을 사용하는 방법.
-
-## 📂 03. 시장 조사 (맥락)
-*   [[03_Market_Research/Competitor_Analysis|경쟁사 분석]] - Gridly vs. IndieLoca.
-
-## 📂 04. 마케팅 (목소리)
-*   [[04_Marketing/Beta_Launch_Kit|베타 런칭 키트]] - 트위터 카피, Tally 폼, 위기 관리 매뉴얼.
+> PARA (Projects, Areas, Resources, Archive) 기반 개인 프로젝트 위키
 
 ---
-**빠른 액션:**
-- [ ] [[04_Marketing/Beta_Launch_Kit|D-Day 체크리스트]] 확인
-- [ ] [[02_Tech_Analysis/GLM_Pipeline|GLM 프롬프트]] 검토
+
+## 🚀 1. Projects
+
+활성 프로젝트 - 명확한 목표와 마감이 있는 것들
+
+### [[1_Projects/indieloca|IndieLoca]]
+> 게임 번역가를 위한 워크벤치
+> **단계:** Phase 1 (컨시어지 베타)
+
+### [[1_Projects/metta-sutta|Metta Sutta (자비경)]]
+> 팔리어 경전 연구 앱 (76세 사용자 최적화)
+> **단계:** 초기 개발
+
+---
+
+## 🌱 2. Areas
+
+지속적으로 관리해야 하는 영역
+
+*(추후 추가)*
+
+---
+
+## 📚 3. Resources
+
+참고 자료 모음
+
+*(추후 추가)*
+
+---
+
+## 📦 4. Archive
+
+완료된 프로젝트와 비활성 항목
+
+- Ticket_001: Quartz 설정
+- Ticket_002: 위키 배포
+- Ticket_003: GLM 감사
+- Ticket_004: Ren'Py 태그 테스트
+
+---
+
+## 📥 Inbox
+
+처리 대기 항목
+
+- [[Inbox/Action_Items|액션 아이템]]
